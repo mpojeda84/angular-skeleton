@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="app" ng-controller="appCrtl">
+<html lang="en" ng-app="app" ng-controller="appCtrl">
 <head>
   <script src="common/bower_components/angular/angular.js"></script>
   <script src="common/bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -25,18 +25,17 @@
 
  <div class="container">  
      <div>
-    	 <span class="mycc-language">
+    	 <span>
 	     	<a href="" ng-click="switchLanguage('es_CU')" translate>GLOBAL.LANG_ES_CU</a>
 			&nbsp; | &nbsp;
 			<a href="" ng-click="switchLanguage('en_US')" translate>GLOBAL.LANG_EN_US</a> 
 		</span>
          <br/>
 	</div>   
-    	
+     This is the message from the main controller: <p>{{message}}</p>
+     ... and this is the actual view being rendered:
      <div ui-view></div>
-     
-     
-  
+
  </div>
    
 </body>
