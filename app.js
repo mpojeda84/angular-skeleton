@@ -8,11 +8,11 @@ var app = angular.module('app', [
     'ui.bootstrap',
     'pascalprecht.translate',
     'ngSanitize',
+    'appControllers',
     //logical modules:
-    'module1',
-    'module2',
+    'module1' //,
     //reusable components:
-    'component1'
+    //'component1'
 ]);
 
 app.config(['$httpProvider', '$stateProvider', '$urlRouterProvider', '$translateProvider', '$injector', function ($httpProvider, $stateProvider, $urlRouterProvider, $translateProvider, $injector) {
